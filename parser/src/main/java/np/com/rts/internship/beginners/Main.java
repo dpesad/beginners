@@ -12,9 +12,10 @@ public class Main {
 
   public Main() {
     // Write your code here
-	  double value = Double.parseDouble(parseThis);
+      String[] s = parseThis.split("-");
+      value = Double.parseDouble(s[2]);
 
-	  System.out.println(value);
+      System.out.println(value);
   }
 
   public static void main(String[] args) {
