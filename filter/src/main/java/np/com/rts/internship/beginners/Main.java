@@ -1,6 +1,6 @@
 package np.com.rts.internship.beginners;
 
-import java.util.*;
+import java.util.ArrayList;
 
 
 public class Main {
@@ -23,9 +23,27 @@ public class Main {
   public Main() {
     // Write your code here
 
+    int length= originalList.size();
+    for(int i = 0; i<length; i++){
 
+      if(originalList.get(i).getType().equals("herbivore")){
+      herbivores.add(originalList.get(i));
+    }
+     else  if(originalList.get(i).getType().equals("carnivore")){
+         carnivores.add(originalList.get(i));
+      }
+      else if(originalList.get(i).getType().equals("omnivore")){
+        omnivores.add(originalList.get(i));
+
+      }
+  }
+System.out.println("the herbivore animals are " + herbivores.size());
+    System.out.println("the carnivores animals are " + carnivores.size());
+    System.out.println("the omnivores animals are " + omnivores.size());
   }
   public static void main(String[] args) {
     new Main();
+
+
   }
 }
