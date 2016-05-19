@@ -12,8 +12,9 @@ public class Main {
 
   public Main() {
     // Write your code here
+	  double value = Double.parseDouble(parseThis);
 
-
+	  System.out.println(value);
   }
 
   public static void main(String[] args) {
